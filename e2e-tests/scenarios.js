@@ -2,40 +2,80 @@
 
 /* https://github.com/angular/protractor/blob/master/docs/toc.md */
 
-describe('my app', function() {
+describe('angularTankApp', function() {
 
 
-  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
+  it('should automatically redirect to /home when location hash/fragment is empty', function() {
     browser.get('index.html');
-    expect(browser.getLocationAbsUrl()).toMatch("/view1");
+    expect(browser.getLocationAbsUrl()).toMatch('/home');
   });
 
 
-  describe('view1', function() {
+  describe('home', function() {
 
     beforeEach(function() {
-      browser.get('index.html#!/view1');
+      browser.get('index.html#!/home');
     });
 
 
-    it('should render view1 when user navigates to /view1', function() {
+    it('should render home when user navigates to /home', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 1/);
+        toMatch(/partial for home/);
     });
 
   });
 
 
-  describe('view2', function() {
+  describe('works', function() {
 
     beforeEach(function() {
-      browser.get('index.html#!/view2');
+      browser.get('index.html#!/works');
     });
 
 
-    it('should render view2 when user navigates to /view2', function() {
+    it('should render works when user navigates to /works', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 2/);
+        toMatch(/partial for works/);
+    });
+
+  });
+
+  describe('about', function() {
+
+    beforeEach(function() {
+      browser.get('index.html#!/about');
+    });
+
+
+    it('should render home when user navigates to /about', function() {
+      expect(element.all(by.css('[ng-view] p')).first().getText()).
+        toMatch(/partial for about/);
+    });
+
+  });
+
+  describe('contacts', function() {
+
+    beforeEach(function() {
+      browser.get('index.html#!/contacts');
+    about
+
+    it('should render contacts when user navigates to /contacts', function() {
+      expect(element.all(by.css('[ng-view] p')).first().getText()).
+        toMatch(/partial for contacts/);
+    });
+
+  });
+
+    describe('blog', function() {
+
+    beforeEach(function() {
+      browser.get('index.html#!/blog');
+    about
+
+    it('should render blog when user navigates to /blog', function() {
+      expect(element.all(by.css('[ng-view] p')).first().getText()).
+        toMatch(/partial for blog/);
     });
 
   });

@@ -1,5 +1,4 @@
-/* app css stylesheet */
-
+/* app css stylesheet 
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -17,9 +16,11 @@
 
 .menu > li {
   display: inline;
+
 }
 
 .menu > li + li:before {
   content: "|";
   padding-right: 0.3em;
 }
+*/
