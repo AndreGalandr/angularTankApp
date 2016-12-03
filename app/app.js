@@ -8,7 +8,9 @@ angular.module('myApp', [
   'myApp.about',
   'myApp.contacts',
   'myApp.blog',
-  'ngMaterial'
+  'ngMaterial',
+  'ngMessages',
+  
 
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
