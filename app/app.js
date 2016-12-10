@@ -10,6 +10,7 @@ angular.module('myApp', [
   'myApp.blog',
   'ngMaterial',
   'ngMessages',
+  'validationApp'
   
 
 ]).
@@ -18,3 +19,5 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 
   $routeProvider.otherwise({redirectTo: '/home'});
 }]);
+
+

@@ -8,6 +8,7 @@ body{
 	color: #2d394c;
 	font-weight: 400;
 	min-width: 320px;
+	/* padding-top:30px; */
 }
 section{
 	position: relative;
@@ -38,20 +39,20 @@ section{
 	line-height: 72px;
 	text-transform: uppercase;
 }
-#header p{
+/* #header p{
 	color: #fff;
 	font-size: 24px;
 	font-weight: 300;
 	font-style: italic;
 	margin-top: 40px;
-}
-#header p+p{
+} */
+#header p{
 	color: #f7f7f7;
 	font-style: normal;
 	font-weight: 500;
-	margin: 60px 0 30px;
+	/* margin: 60px 0 30px; */
 }
-#header p+p span{
+#header p span{
 	color: #f7f7f7;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -74,7 +75,7 @@ section{
 	color: #e1e2e5;
 }
 	
-#header .form-inline .btn{
+#header  .btn-primary{
 	background-color: #77c344;
 	border-radius: 5px;
 	font-weight: 500;
@@ -86,11 +87,11 @@ section{
 	padding-right: 25px;
 	border-color: #77c344;
 	transition: all .5s;
-}
-#header .form-inline .btn:hover{
+}/*form-inline*/
+#header .btn-primary:hover{
 	background-color: #4aa50f;
 	border-color: #4aa50f;
-}	
+}	/*form-inline*/
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
 	text-decoration: underline;
 }
@@ -354,19 +355,18 @@ section{
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	#header h1{
-		font-size: 30px;
-		line-height: 40px;
+		font-size: 20px;
+    line-height: 20px;
+    margin-top: 0;
 	}
+
 	#header p{
-		font-size: 18px;
-		margin-top: 40px;
+		font-size: 15px;
+		margin-bottom: 5px;
+		/* margin-top: 5px; */
+		/* display: none; */
 	}
-	#header p+p{
-		margin: 30px 0;
-	}
-	#header p+p span{
-	padding: 3px 15px;
-	}
+
 	#header{
 		min-height: 550px;
 	}
@@ -393,6 +393,15 @@ section{
 	#tankapp_slade {
 		min-height: 800px;
 	}
+
+	#header p {
+    font-size: 10px;
+   	/* margin-bottom: 5px; */
+		/* display: none; */
+	}
+  #header label {
+    margin: 0;
+   }
 }
 
 
