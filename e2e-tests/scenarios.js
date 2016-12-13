@@ -2,6 +2,9 @@
 
 /* https://github.com/angular/protractor/blob/master/docs/toc.md */
 
+// Здесь подумай сгенерировать тесты в цикле for,Вместо того,
+// чтобы писать блоки it вручную
+
 describe('angularTankApp', function() {
 
 

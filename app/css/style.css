@@ -38,6 +38,7 @@ section{
 	font-weight: 700;
 	line-height: 72px;
 	text-transform: uppercase;
+	padding-left: 15px;
 }
 /* #header p{
 	color: #fff;
@@ -50,6 +51,8 @@ section{
 	color: #f7f7f7;
 	font-style: normal;
 	font-weight: 500;
+	padding-left: 15px;
+
 	/* margin: 60px 0 30px; */
 }
 #header p span{
@@ -75,7 +78,7 @@ section{
 	color: #e1e2e5;
 }
 	
-#header  .btn-primary{
+#header .btn-primary, #forms .btn-primary{
 	background-color: #77c344;
 	border-radius: 5px;
 	font-weight: 500;
@@ -88,7 +91,7 @@ section{
 	border-color: #77c344;
 	transition: all .5s;
 }/*form-inline*/
-#header .btn-primary:hover{
+#header .btn-primary:hover, #forms .btn-primary:hover{
 	background-color: #4aa50f;
 	border-color: #4aa50f;
 }	/*form-inline*/
@@ -197,7 +200,13 @@ section{
 	line-height: 32px;
 	margin-bottom: 70px;
 }
-#forms .form-inline {
+
+#forms p.help-block {
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+}
+/* #forms .form-inline {
 	margin: 0 auto;
 }
 #forms .form-inline .form-control{
@@ -209,13 +218,19 @@ section{
 	border-radius: 5px;
 	font-family: "Open Sans";
 	font-size: 21px;
+} */
+
+.left {
+	/* text-align: left; */
+	float: left;
+	padding-left: 10px;
 }
 
-#forms input::-webkit-input-placeholder{
+/* #forms input::-webkit-input-placeholder{
 	color: #e1e2e5;
-}
+} */
 	
-#forms .form-inline .btn{
+/* #forms .btn-primary{
 	background-color: #77c344;
 	border-radius: 5px;
 	font-weight: 500;
@@ -228,10 +243,10 @@ section{
 	border-color: #77c344;
 	transition: all .5s;
 }
-#forms .form-inline .btn:hover{
+#forms .btn-primary:hover{
 	background-color: #4aa50f;
 	border-color: #4aa50f;
-}	
+}	 */
 
 /*footer*/
 .menu-footer .navbar{
