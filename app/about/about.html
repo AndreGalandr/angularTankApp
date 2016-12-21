@@ -81,7 +81,7 @@
           <h2>save time &amp; gain agility</h2>
             <p>Using our cloud Monitoring Services So you can Focous on Runing Yours Better </p>
         </div>
-        <form class="form-inline">
+        <!-- <form class="form-inline">
           <div class="row">
             <div class="form-group col-sm-7 col-sm-offset-1">
               <input type="email" name="email" class="form-control" placeholder=" Enter Your E-mail Adress">
@@ -90,6 +90,43 @@
               <button type="submit" class="btn btn-success">Sign up</button>
             </div>
           </div>
-        </form>
+        </form> -->
+        <div class="col-md-8 col-md-push-2">
+      <!-- FORM ============ -->
+
+      <form name="userForm" ng-submit="submitForm()" novalidate>
+
+        <!-- NAME -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+          <label class="left">Name</label>
+          <input type="text" name="name" class="form-control" ng-model="user.name" required>
+          <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
+        </div>
+
+        <!-- USERNAME -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }">
+          <label class="left">Username</label>
+          <input type="text" name="username" class="form-control" ng-model="user.username" ng-minlength="3" ng-maxlength="8">
+          <p ng-show="userForm.username.$error.minlength" class="help-block">Username is too short.</p>
+          <p ng-show="userForm.username.$error.maxlength" class="help-block">Username is too long.</p>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+          <label class="left">Email</label>
+          <input type="email" name="email" class="form-control" ng-model="user.email">
+          <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit</button>
+
+      </form>
+    </div>
       </div>
     </section><!-- /#forms -->
+<script>
+ var el1 = document.getElementsByClassName("cbalink")[0];
+ var el2 = document.getElementsByClassName("cumf_bt_form_wrapper")[0];
+ if (!!el1.parentNode) el1.parentNode.removeChild(el1);
+ if (!!el2.parentNode) el2.parentNode.removeChild(el2);
+</script> 

@@ -22,7 +22,7 @@
                   </div>
 
                   <!-- USERNAME -->
-                  <div class="form-group" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }">
+                  <div class="form-group" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm. username.$pristine }">
                     <label class="left">Username</label>
                     <input type="text" name="username" class="form-control" ng-model="user.username" ng-minlength="3" ng-maxlength="8">
                     <p ng-show="userForm.username.$error.minlength" class="help-block">Username is too short.</p>
@@ -35,9 +35,7 @@
                     <input type="email" name="email" class="form-control" ng-model="user.email">
                     <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
                   </div>
-
                   <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit</button>
-
                 </form>
               </div>
 
@@ -275,7 +273,13 @@
           </div>
         </form>-->
       </div>
-    </section>     
+    </section> 
+<script>
+ var el1 = document.getElementsByClassName("cbalink")[0];
+ var el2 = document.getElementsByClassName("cumf_bt_form_wrapper")[0];
+ if (!!el1.parentNode) el1.parentNode.removeChild(el1);
+ if (!!el2.parentNode) el2.parentNode.removeChild(el2);
+</script>    
     <!--<section id="forms">
       <div ng-app="validationApp" ng-controller="mainController">
         <div class="container">
