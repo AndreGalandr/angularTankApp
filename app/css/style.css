@@ -135,6 +135,7 @@ section{
 	font-size: 14px;
 	line-height: 22px;
 	padding-bottom: 20px;
+	text-align: justify;
 }
 
 /*tankapp_slade*/
@@ -317,8 +318,9 @@ section{
 		min-height: 630px;
 	}
 	#tankapp{
-		background: url(../img/body1.png) 86% 68% no-repeat;
-		background-size: 125%;
+		/* background: url(../img/body1.png) 86% 68% no-repeat;
+		background-size: 125%; */
+		background: #fff;
 	}
 	#forms .form-group {
     margin-bottom: 15px;
@@ -335,9 +337,9 @@ section{
 	#tankapp_slade {
 		min-height: 590px;
 	}
-	#tankapp{
-		background: none;
-	}
+/* 	#tankapp{
+		background: #fff;
+	} */
 	#tankapp img, #tankapp_slade img{
 		padding-right: 0;
 	}
