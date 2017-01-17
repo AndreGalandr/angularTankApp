@@ -1,0 +1,437 @@
+html, body{
+	height: 100%;
+}
+body{
+	background: #fff;
+	font-family: Ubuntu, sans-serif;
+	font-size: 16px;
+	color: #2d394c;
+	font-weight: 400;
+	min-width: 320px;
+	/* padding-top:30px; */
+}
+section{
+	position: relative;
+}
+
+/*header*/
+.menu-top .navbar{
+	margin-bottom: 0;
+	background: #fff;
+	padding: 20px 0;
+	text-transform: uppercase;
+	border: none;
+}
+#header{
+	background: url(../img/bg.jpg) center no-repeat;
+	background-size: cover;
+	height: 100%;
+	min-height: 850px;
+}
+#header .header{
+	position: relative;
+	top: 150px;
+}
+#header h1{
+	color: #f7f6f2;
+	font-size: 52px;
+	font-weight: 700;
+	line-height: 72px;
+	text-transform: uppercase;
+	padding-left: 15px;
+}
+/* #header p{
+	color: #fff;
+	font-size: 24px;
+	font-weight: 300;
+	font-style: italic;
+	margin-top: 40px;
+} */
+#header p{
+	color: #f7f7f7;
+	font-style: normal;
+	font-weight: 500;
+	padding-left: 15px;
+
+	/* margin: 60px 0 30px; */
+}
+#header p span{
+	color: #f7f7f7;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 3px 15px;
+	background-color: #ffce54;
+	border-radius: 5px;
+}
+#header .form-inline .form-control{
+	height: 50px;
+	width: 100%;
+}
+#header .form-control{
+	padding-left: 25px;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+#header input::-webkit-input-placeholder{
+	color: #e1e2e5;
+}
+	
+#header .btn-primary, #forms .btn-primary{
+	background-color: #77c344;
+	border-radius: 5px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #fff;
+	height: 50px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-color: #77c344;
+	transition: all .5s;
+}/*form-inline*/
+#header .btn-primary:hover, #forms .btn-primary:hover{
+	background-color: #4aa50f;
+	border-color: #4aa50f;
+}	/*form-inline*/
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	text-decoration: underline;
+}
+
+/*partner*/
+#partner{
+	background: #f8f8f8;
+	padding: 60px 0;
+	line-height: 33px;
+}
+
+/*tankapp*/
+#tankapp{
+	padding: 115px 0;
+	background: url(../img/body1.png) center 75% no-repeat;
+}
+#tankapp h2, #tankapp_slade h2, #forms h2{
+	color: #5a626e;
+	margin-bottom: 120px;
+	font-size: 40px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+#tankapp img, #tankapp_slade img{
+	padding-right: 20px;
+}
+#tankapp h3, #tankapp_slade h3{
+	display: inline-block;
+	color: #4f5765;
+	font-size: 22px;
+	font-weight: 500;
+	margin-top: 10px;
+	padding-bottom: 20px;
+}
+#tankapp p, #tankapp_slade p{
+	color: #9499a2;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	padding-bottom: 20px;
+}
+
+/*tankapp_slade*/
+#tankapp_slade{
+	background: url(../img/bg-2.jpg) center no-repeat;
+	background-size: cover;
+	height: 100%;
+	min-height: 710px;
+	padding: 115px 0;
+}
+#tankapp_slade p{
+	font-size: 16px;
+	line-height: 32px;
+}
+.carousel-indicators {
+	right: 0;
+	bottom: -10px;
+	margin: 0;
+	left: 65%;
+	width: 32%;
+}
+.carousel-indicators li{
+	border: 1px solid #64a4d7;
+	height: 18px;
+	width: 18px;
+}
+
+.carousel-indicators li.active{
+	background: #64a4d7;
+	height: 20px;
+	width: 20px; 
+}	
+
+/* .btn1 {
+  color : green;
+  background-color: rgba(255, 222, 121, 0.96);
+  border-radius: 10px 0 0 10px;
+  font-size: 16px;
+}
+
+.btn1:not([disabled]):hover {
+  background-color: rgba(107, 103, 91, 0.96);
+  color: yellow;
+}
+
+.btn1[disabled] {
+  color : rgb(187, 187, 187);
+  background-color: rgba(230, 230, 229, 0.96);
+} */
+/*forms*/
+#forms{
+	padding: 145px 0 100px;
+}
+#forms h2{
+	margin-bottom: 0;
+}
+#forms p{
+	padding-top: 50px;
+	color: #5a626e;
+	font-size: 24px;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 32px;
+	margin-bottom: 70px;
+}
+
+#forms p.help-block {
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+}
+/* #forms .form-inline {
+	margin: 0 auto;
+}
+#forms .form-inline .form-control{
+	height: 70px;
+	width: 100%;
+}
+#forms .form-control{
+	padding-left: 25px;
+	border-radius: 5px;
+	font-family: "Open Sans";
+	font-size: 21px;
+} */
+
+.left {
+	/* text-align: left; */
+	float: left;
+	padding-left: 10px;
+}
+
+/* #forms input::-webkit-input-placeholder{
+	color: #e1e2e5;
+} */
+	
+/* #forms .btn-primary{
+	background-color: #77c344;
+	border-radius: 5px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #fff;
+	height: 70px;
+	padding-left: 55px;
+	padding-right: 55px;
+	border-color: #77c344;
+	transition: all .5s;
+}
+#forms .btn-primary:hover{
+	background-color: #4aa50f;
+	border-color: #4aa50f;
+}	 */
+
+/*footer*/
+.menu-footer .navbar{
+	margin-bottom: 0;
+	background: #f9f9f9;
+	padding: 20px 0;
+	text-transform: uppercase;
+	border: none;
+}
+.navbar-default .navbar-nav>li:nth-child(5)>a{
+	border-right: 1px solid #d3d3d3;
+}
+.icon {
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.icon:hover {
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+/* Form Angular Matirial */
+.inputdemoErrorsAdvanced {
+  /* NOTE: Check the demo's HTML to see some additional RTL support CSS */
+  /* Setup animations similar to the ng-messages */ }
+  .inputdemoErrorsAdvanced .hint {
+    /* Position the hint */
+    position: absolute;
+    left: 2px;
+    right: auto;
+    bottom: 7px;
+    /* Copy styles from ng-messages */
+    font-size: 12px;
+    line-height: 14px;
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    /* Set our own color */
+    color: grey; }
+  .inputdemoErrorsAdvanced .hint.ng-hide,
+  .inputdemoErrorsAdvanced .hint.ng-enter,
+  .inputdemoErrorsAdvanced .hint.ng-leave.ng-leave-active {
+    bottom: 26px;
+    opacity: 0; }
+  .inputdemoErrorsAdvanced .hint.ng-leave,
+  .inputdemoErrorsAdvanced .hint.ng-enter.ng-enter-active {
+    bottom: 7px;
+    opacity: 1; }
+    
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	#tankapp{
+	background: url(../img/body1.png) 86% 75% no-repeat;
+	background-size: 125%;
+}
+	#tankapp, #tankapp_slade, #forms{
+		padding: 60px 0px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	#tankapp, #tankapp_slade, #forms{
+		padding: 50px 0px;
+	}
+	#tankapp_slade {
+		min-height: 630px;
+	}
+	#tankapp{
+		background: url(../img/body1.png) 86% 68% no-repeat;
+		background-size: 125%;
+	}
+	#forms .form-group {
+    margin-bottom: 15px;
+	} 
+}
+
+@media only screen and (max-width : 991px) {
+	#tankapp, #tankapp_slade, #forms{
+		padding: 40px 0px;
+	}
+	#tankapp h2, #tankapp_slade h2{
+		margin-bottom: 50px;
+	}
+	#tankapp_slade {
+		min-height: 590px;
+	}
+	#tankapp{
+		background: none;
+	}
+	#tankapp img, #tankapp_slade img{
+		padding-right: 0;
+	}
+	#tankapp .bg_img img{
+		width: 90%;
+		float: right;
+	}
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	#tankapp_slade {
+		min-height: 550px;
+	}
+	.navbar-nav>li:nth-child(6), 
+	.navbar-nav>li:nth-child(7), 
+	.navbar-nav>li:nth-child(8){
+		float: left;
+	}
+
+}
+
+@media only screen and (max-width : 767px) {
+	#tankapp_slade {
+		background: url(../img/bg-2_1_1.png) repeat;
+	}	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	#header h1{
+		font-size: 20px;
+    line-height: 20px;
+    margin-top: 0;
+	}
+
+	#header p{
+		font-size: 15px;
+		margin-bottom: 5px;
+		/* margin-top: 5px; */
+		/* display: none; */
+	}
+
+	#header{
+		min-height: 550px;
+	}
+	#header .header{
+		top: 60px;
+	}
+	#tankapp_slade {
+		min-height: 650px;
+	}
+	.carousel-indicators{
+		left: 55%;
+	} 
+}
+
+@media only screen and (max-width : 320px) {
+	#tankapp h2, #tankapp_slade h2, #forms h2{
+		font-size: 30px;
+	}
+	.part{
+		float: none;
+		width: 100%;
+    padding: 5px;
+	}
+	#tankapp_slade {
+		min-height: 800px;
+	}
+
+	#header p {
+    font-size: 10px;
+   	/* margin-bottom: 5px; */
+		/* display: none; */
+	}
+  #header label {
+    margin: 0;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
