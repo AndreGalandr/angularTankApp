@@ -14,7 +14,7 @@ section{
 	position: relative;
 }
 
-/*header*/
+/*header*/.carousel-indicators
 .menu-top .navbar{
 	margin-bottom: 0;
 	background: #fff;
@@ -151,10 +151,10 @@ section{
 	line-height: 32px;
 }
 .carousel-indicators {
-	right: 0;
-	bottom: -10px;
-	margin: 0;
-	left: 65%;
+	// right: 0;
+	// bottom: -10px;
+	// margin: 0;
+	left: 64%;
 	width: 32%;
 }
 .carousel-indicators li{
