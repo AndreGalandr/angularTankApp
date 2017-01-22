@@ -10,7 +10,8 @@ angular.module('myApp', [
   'myApp.blog',
   'ngMaterial',
   'ngMessages',
-  'validationApp'
+  'validationApp',
+  'slider'
   
 
 ]).
