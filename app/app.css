@@ -28,3 +28,18 @@
 input.ng-invalid.ng-dirty{
 	border: 1px solid red;
 } */
+
+/*стили для карусели*/
+.carousel-control.right, .carousel-control.left {
+  background: none;
+}
+.glyphicon {
+  font-family: none;
+}
+.carousel-control {
+  text-shadow: none;
+}
+.carousel-indicators {
+    left: 100%;
+    bottom: -20px;
+}

@@ -182,19 +182,60 @@
 </section><!-- /#tankapp -->
 
 <!-- Слайдер Angular-Bootstrap -->
-
+<section id="tankapp_slade">
+  <div class="container">
+    <h2 class="text-center wow zoomIn">why tank app diffrent ?</h2>
+<div class="row">
+<div class="col-sm-8">
 <div ng-controller="CarouselDemoCtrl">
-  <div style="height: 305px">
+  <!-- <div style="height: 305px"> -->
     <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
       <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-        <img ng-src="{{slide.image}}" style="margin:auto;">
-        <div class="carousel-caption">
+        <!-- <img ng-src="{{slide.image}}" style="margin:auto;"> -->
+
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+             <!--  <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+              </ol> -->
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="img/icon-5.png" class="pull-left" alt="icon">
+                  <h3>Works on any device anyware</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut</p>
+                  
+                </div>
+                <div class="item">
+                  <img src="img/icon-5.png" class="pull-left" alt="icon">
+                  <h3>Works on any device anyware 2</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut</p>
+                </div>
+                <div class="item">
+                  <img src="img/icon-5.png" class="pull-left" alt="icon">
+                  <h3>Works on any device anyware 3</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut</p>
+                </div>
+                <div class="item">
+                  <img src="img/icon-5.png" class="pull-left" alt="icon">
+                  <h3>Works on any device anyware 4</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut</p>
+                </div>
+              </div> <!-- /.carousel-inner -->
+            </div>
+          </div> <!-- /.col-md-8--> 
+        </div>
+       <!--  <div class="carousel-caption">
           <h4>Slide {{slide.id}}</h4>
           <p>{{slide.text}}</p>
-        </div>
+        </div> -->
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 <!--   <div class="row">
     <div class="col-md-6">
       <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
@@ -212,6 +253,8 @@
     </div>
   </div> -->
 </div>
+</div>
+</section>
 
 <!--
 <section id="tankapp_slade">
