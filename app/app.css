@@ -26,20 +26,61 @@
 */
 /* 
 input.ng-invalid.ng-dirty{
-	border: 1px solid red;
-} */
+  border: 1px solid red;
+  } */
 
-/*стили для карусели*/
-.carousel-control.right, .carousel-control.left {
-  background: none;
+  /*стили для карусели*/
+
+.carousel-control.left,
+.carousel-control.right {
+       // display: none; 
+ }
+
+ a.right.carousel-control {
+  position: absolute !important;
+  top: 100%;
+  width: 385px;
+  right: 16px;
+  height: 39px;
+  z-index: 2;
 }
+
+a.left.carousel-control {
+  position: absolute !important;
+  top: 100%;
+  width: 385px;
+  left: 16px;
+  height: 39px;
+  z-index: 2;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none !important;
+}
+
 .glyphicon {
   font-family: none;
 }
+
 .carousel-control {
   text-shadow: none;
 }
+
 .carousel-indicators {
-    left: 100%;
-    bottom: -20px;
+  left: 100%;
+  bottom: -20px;
 }
+
+// .carousel-control.right, .carousel-control.left {
+//   background: none;
+// }
+// .glyphicon {
+//   font-family: none;
+// }
+// .carousel-control {
+//   text-shadow: none;
+// }
+// .carousel-indicators {
+//     left: 100%;
+//     bottom: -20px;
+// }
